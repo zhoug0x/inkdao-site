@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
 			<hr />
 			<ol>
 				<li>get inked,</li>
-				<li>get DAO'd,</li>
+				<li>get DAO&apos;d,</li>
 				<li>enter the Citadel 🏰</li>
 			</ol>
 
