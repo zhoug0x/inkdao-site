@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
 		font-family: sans-serif;
 		color: ${({ theme }) => theme.colors.text};
 		background-color: ${({ theme }) => theme.colors.background};
+
+		@media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+			font-size: 1.25em;
+		}
 	}
 	
 	a {
@@ -15,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
 		&:hover {
 			opacity: 0.75;
 		}
-
 	}
 `;
 

@@ -8,6 +8,16 @@ const theme: DefaultTheme = {
 		link: 'dodgerblue',
 		background: '#FFF',
 	},
+	breakpoints: {
+		sm: '576px',
+		md: '768px',
+		lg: '992px',
+	},
+	widths: {
+		smContainer: '540px',
+		mdContainer: '720px',
+		lgContainer: '960px'
+	}
 };
 
 export default theme;

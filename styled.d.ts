@@ -8,5 +8,15 @@ declare module 'styled-components' {
 			link: string;
 			background: string;
 		};
+		breakpoints: {
+			sm: string;
+			md: string;
+			lg: string;
+		};
+		widths: {
+			smContainer: string;
+			mdContainer: string;
+			lgContainer: string;
+		};
 	}
 }

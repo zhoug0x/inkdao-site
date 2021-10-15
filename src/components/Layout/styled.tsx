@@ -7,15 +7,15 @@ export const Container = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 
-	@media (min-width: 576px) {
-		max-width: 540px;
+	@media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+		max-width: ${({ theme }) => theme.widths.smContainer};
 	}
 
-	@media (min-width: 768px) {
-		max-width: 720px;
+	@media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		max-width: ${({ theme }) => theme.widths.mdContainer};
 	}
 
-	@media (min-width: 992px) {
-		max-width: 960px;
+	@media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+		max-width: ${({ theme }) => theme.widths.lgContainer};
 	}
 `;
