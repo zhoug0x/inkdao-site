@@ -1,12 +1,12 @@
 import type { AppProps } from 'next/app';
 
-import { StylesProvider } from '../providers';
+import { ThemeProvider } from '../contexts/ThemeContext';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
 	return (
-		<StylesProvider>
+		<ThemeProvider>
 			<Component {...pageProps} />
-		</StylesProvider>
+		</ThemeProvider>
 	);
 };
 

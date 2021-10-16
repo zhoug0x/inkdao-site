@@ -15,7 +15,8 @@ export const Container = styled.div`
 		max-width: ${({ theme }) => theme.widths.mdContainer};
 	}
 
-	@media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+	// TODO: uncomment when we have more content to fill a larger screen width
+	/* @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 		max-width: ${({ theme }) => theme.widths.lgContainer};
-	}
+	} */
 `;
