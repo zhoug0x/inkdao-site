@@ -1,22 +1,12 @@
 import styled from 'styled-components';
+import { Container } from 'react-bootstrap';
 
-export const Container = styled.div`
-	width: 100%;
-	padding-right: 2rem;
-	padding-left: 2rem;
-	margin-right: auto;
-	margin-left: auto;
+const Y_PADDING = '8rem';
 
-	@media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-		max-width: ${({ theme }) => theme.widths.smContainer};
+export const LayoutContainer = styled(Container)`
+	// Override Bootstrap container to have Y-axis padding at the largest width
+	@media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+		padding-left: ${Y_PADDING};
+		padding-right: ${Y_PADDING};
 	}
-
-	@media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		max-width: ${({ theme }) => theme.widths.mdContainer};
-	}
-
-	// TODO: uncomment when we have more content to fill a larger screen width
-	/* @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-		max-width: ${({ theme }) => theme.widths.lgContainer};
-	} */
 `;

@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { ThemeProvider as StyledProvider } from 'styled-components';
-import { Normalize } from 'styled-normalize';
 
 import GlobalStyle from '../styles/GlobalStyle';
 import { lightTheme, darkTheme } from '../styles/themes';
@@ -27,7 +26,6 @@ export const ThemeProvider: React.FC = ({ children }) => {
 
 	return (
 		<ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
-			<Normalize />
 			<StyledProvider theme={isDarkMode ? darkTheme : lightTheme}>
 				<GlobalStyle />
 				{children}

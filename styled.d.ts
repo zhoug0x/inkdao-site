@@ -13,10 +13,5 @@ declare module 'styled-components' {
 			md: string;
 			lg: string;
 		};
-		widths: {
-			smContainer: string;
-			mdContainer: string;
-			lgContainer: string;
-		};
 	}
 }

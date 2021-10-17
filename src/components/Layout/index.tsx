@@ -12,13 +12,13 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ title, children }) => {
 	return (
-		<S.Container>
+		<S.LayoutContainer>
 			<Head>
 				<link rel="icon" href={FAVICON_STRING} />
 				<title>{title}</title>
 			</Head>
 			{children}
-		</S.Container>
+		</S.LayoutContainer>
 	);
 };
 

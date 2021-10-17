@@ -5,12 +5,12 @@ export const Header = styled.div`
 	justify-content: space-between;
 	align-items: flex-end;
 	border-bottom: 1px solid ${({ theme }) => theme.colors.secondaryText};
-	margin: 4rem 0 0 0;
-	padding-bottom: 1rem;
+	margin: 4rem 0 1rem 0;
+	padding-bottom: 0.25rem;
 
 	h1 {
 		font-size: 2.5em;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.075em;
 		margin: 0;
 	}
 
@@ -25,14 +25,18 @@ export const Branding = styled.div`
 `;
 
 export const Links = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	font-size: 2rem;
 
+	& > *:not(:last-child) {
+		margin-right: 0.5em;
+	}
 
-display: flex;
-& > *:not(:last-child) {
-	margin-right: 0.75em;
-}
-
-`
+	& svg {
+		font-size: 0.75em;
+	}
+`;
 
 export const Content = styled.div`
 	li {
