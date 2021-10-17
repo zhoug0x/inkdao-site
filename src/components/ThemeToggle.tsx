@@ -13,9 +13,9 @@ const ToggleBtn = styled.div`
 `;
 
 const ThemeToggle: React.FC = () => {
-	const { isDarkMode, setIsDarkMode } = useThemeContext();
+	const { isDarkMode, setDarkMode } = useThemeContext();
 
-	const onClick = () => setIsDarkMode(!isDarkMode);
+	const onClick = () => setDarkMode(!isDarkMode);
 
 	return (
 		<ToggleBtn onClick={onClick}>
