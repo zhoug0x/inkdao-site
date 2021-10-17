@@ -6,16 +6,21 @@ const GlobalStyle = createGlobalStyle`
 		font-family: sans-serif;
 		color: ${({ theme }) => theme.colors.text};
 		background-color: ${({ theme }) => theme.colors.background};
+
+		@media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+			font-size: 1.25em;
+		}
 	}
 	
 	a {
-		text-decoration: none;
 		color: ${({ theme }) => theme.colors.link};
-
+		
+		&:visited {
+			color: ${({ theme }) => theme.colors.link};
+		}
 		&:hover {
 			opacity: 0.75;
 		}
-
 	}
 `;
 
