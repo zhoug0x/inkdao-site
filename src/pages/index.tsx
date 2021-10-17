@@ -1,23 +1,25 @@
 import React from 'react';
 
-import { useThemeContext } from '../contexts/ThemeContext';
-
 import * as S from './styled';
 import Layout from '../components/Layout';
-import { ExtLink, TwitterIcon } from '../components/Shared';
+import ThemeToggle from '../components/ThemeToggle';
+import { ExtLink } from '../components/Shared';
+import { TwitterIcon } from '../components/Icons';
 
 const HomePage: React.FC = () => {
-	const { isDarkMode, setIsDarkMode } = useThemeContext();
-
 	return (
 		<Layout title="inkDAO">
 			<S.Header>
-				<h1>inkDAO</h1>
-				<span>🖋️</span>
-				<ExtLink href="https://twitter.com/ink_dao">
-					<TwitterIcon />
-				</ExtLink>
-				<button onClick={() => setIsDarkMode(!isDarkMode)}>theme</button>
+				<S.Branding>
+					<h1>inkDAO</h1>
+					<span>🖋️</span>
+				</S.Branding>
+				<S.Links>
+					<ExtLink href="https://twitter.com/ink_dao">
+						<TwitterIcon />
+					</ExtLink>
+					<ThemeToggle />
+				</S.Links>
 			</S.Header>
 			<S.Content>
 				<ol>

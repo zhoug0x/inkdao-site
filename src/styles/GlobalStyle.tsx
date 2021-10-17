@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
 	a {
 		text-decoration: none;
 		color: ${({ theme }) => theme.colors.link};
+		
+		&:visited {
+			color: ${({ theme }) => theme.colors.link};
+		}
 
 		&:hover {
 			opacity: 0.75;

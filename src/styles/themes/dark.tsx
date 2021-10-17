@@ -5,7 +5,7 @@ import baseTheme from './base';
 const colors = {
 	text: '#FFF',
 	secondaryText: '#999',
-	link: 'cornflowerblue',
+	link: 'dodgerblue',
 	background: '#333',
 };
 
